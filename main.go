@@ -32,7 +32,7 @@ var (
 func initVar() {
 	flag.StringVar(&dbName, "db", "tikv", "db's name to test")
 	flag.StringVar(&addrs, "addr", "127.0.0.1:2379", "db's addrs to connect")
-	flag.UintVar(&dbArg.MaxConn, "mc", 128, "max connection to db")
+	flag.UintVar(&dbArg.MaxConn, "max_conn", 128, "max connection to db")
 	flag.UintVar(&dbArg.BatchSize, "batch", 1, "batch size of request to db")
 
 	flag.UintVar(&threadCount, "tc", 1, "thread count to test")
